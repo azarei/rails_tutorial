@@ -2,7 +2,7 @@
 <p>Tags: <%= tag_links(@article.tags) %></p>
 <p>
 	<% if @article.image_file_name %>
-		<p><%= image_tag @article.image.url(:meidum) %></p>
+		<p><%= image_tag @article.image.url %></p>
 	<% end %>
 </p>
 <p><%= @article.body %></p>

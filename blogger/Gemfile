@@ -39,3 +39,6 @@ gem 'jquery-rails'
 
 # Part of the tutorial - For uploading & adding files
 gem 'paperclip'
+
+# Because the tutorial told me too
+gem 'haml-rails'
