@@ -35,10 +35,16 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
 
 # Part of the tutorial - For uploading & adding files
 gem 'paperclip'
 
 # Because the tutorial told me too
 gem 'haml-rails'
+
+# Another tutorial request for Authentication
+gem 'sorcery'
+
+# Trying to fix 'undefined method `key?' for nil:NilClass' problem encountered in tutorial
+gem 'acl9'
