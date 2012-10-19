@@ -12,7 +12,7 @@ Blogger::Application.routes.draw do
 
   root :to => 'articles#index'
 
-  match 'login' => 'author_sessions#new', :as => :login
-  match 'logout' => 'author_sessions#destroy', :as => :logout
+	match 'login'  => 'author_sessions#new',     :as => :login
+	match 'logout' => 'author_sessions#destroy', :as => :logout
 
 end
