@@ -51,3 +51,9 @@ gem 'acl9'
 
 # Adding navigation
 gem 'simple-navigation'
+
+# Adding CSS control
+gem 'compass'
+gem 'compass-960-plugin'
+gem 'susy'
+gem 'compass-rails'
