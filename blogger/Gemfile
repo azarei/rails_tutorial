@@ -48,3 +48,6 @@ gem 'sorcery'
 
 # Trying to fix 'undefined method `key?' for nil:NilClass' problem encountered in tutorial
 gem 'acl9'
+
+# Adding navigation
+gem 'simple-navigation'
