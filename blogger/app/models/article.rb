@@ -23,10 +23,5 @@ class Article < ActiveRecord::Base
       tagging = self.taggings.new
       tagging.tag_id = tag.id
     end
-
-    def image=(attrib)
-      attachments.build :image => attrib
-    end
-
-  end #Class
+  end
 end
