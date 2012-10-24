@@ -6,8 +6,8 @@ module ApplicationHelper
       month_link = link_to Date::MONTHNAMES[m], articles_path(:type => 'month', :month => m)
       month_links += '<li>' + month_link + '</li>'
     end
-    month_links += '<li>' + (link_to "Awesome Articles", articles_path(:type => 'popular')) + '</li>'
-    month_links += '<li>' + (link_to "All Of Them", articles_path) + '</li>'
+    month_links += '<li>' + (link_to "Most Popular", articles_path(:type => 'popular')) + '</li>'
+    month_links += '<li>' + (link_to "All Articles", articles_path) + '</li>'
     month_links += '</ul>'
     
     return month_links.html_safe
