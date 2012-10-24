@@ -24,4 +24,10 @@ class Article < ActiveRecord::Base
       tagging.tag_id = tag.id
     end
   end
+
+  def article_view_count
+    Article.increment_counter(:views, self.id)
+    return self.views
+  end
+
 end

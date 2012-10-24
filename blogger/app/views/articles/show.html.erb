@@ -5,6 +5,7 @@
 		<p><%= image_tag @article.image.url %></p>
 	<% end %>
 </p>
+<div class="viewCount">Views: <%= @viewCount %></div>
 <p><%= @article.body %></p>
 <h3>Comments (<%= @article.comments.count %>)</h3>
 <%= render :partial => 'comment', :collection => @article.comments %>

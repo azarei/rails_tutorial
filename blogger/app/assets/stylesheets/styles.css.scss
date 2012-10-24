@@ -30,7 +30,19 @@ a {
   margin-top: 20px;
 }
 
+#navigation {
+  border: solid 1px red;
+  margin-top: 30px;
+  margin-left: -20px;
+  width: 20%;
+  position: relative;
+  float: left;
+}
+
 #content {
-  clear: both;
+  width: 75%;
   padding-top: 20px;
+  position: relative;
+  right: 20px;
+  margin-left: 200px;
 }
