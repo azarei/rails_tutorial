@@ -2,17 +2,23 @@
 %html
   %head
     %title Blogger
-    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    #container
-      #content
-        = yield
-        %hr
-        %h6
-          - if logged_in?
-            = "Logged in as #{current_user.username}"
-            = link_to "(logout)", logout_path
-          - else
-            = link_to "(login)", login_path
+    #header
+      #login
+        - if logged_in?
+          %span#welcome-message
+            = "Welcome, #{current_user.username}"
+          = link_to 'logout', logout_path, :class => 'logout'
+        - else
+          %span#please-login
+            Please login to get started.
+          = link_to 'login', login_path, :class => 'login'
+    #flash-area
+      %span.flash= flash[:message]
+    #sidebar_nav
+      %h2 sidebar nav
+    #content
+      = yield
