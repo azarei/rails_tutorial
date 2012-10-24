@@ -1,4 +1,6 @@
 <%= form_for(@article, :html => {:multipart => true}) do |f| %>
+	<%= f.hidden_field :author_id, :value => current_user.id %>
+
 	<p>
 		<%= f.label :title %><br />
 		<%= f.text_field :title %>
