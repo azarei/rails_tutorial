@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
 		@comment = Comment.new
 		@comment.article_id = @article.id
 		@viewCount = @article.article_view_count
+	    @random_color = Polychromasia::ColorPicker.new.random_colors_to_hex
 	end
 	def new
 		@article = Article.new
