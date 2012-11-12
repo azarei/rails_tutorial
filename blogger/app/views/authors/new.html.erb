@@ -1,5 +1,13 @@
-<h1>New author</h1>
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= javascript_include_tag :defaults, "rails.validations" %>
+	</head>
+	<body>
+		<h1>New author</h1>
+		<%= render 'form' %>
+		<%= link_to 'Back', authors_path %>
+	</body>
+</html>
 
-<%= render 'form' %>
 
-<%= link_to 'Back', authors_path %>
