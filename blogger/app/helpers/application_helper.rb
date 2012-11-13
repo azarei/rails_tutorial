@@ -12,4 +12,10 @@ module ApplicationHelper
     
     return month_links.html_safe
   end
+  def random_color
+    background = Polychromasia::ColorPicker.new
+    background.random_color
+
+    return background
+  end
 end

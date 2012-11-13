@@ -53,4 +53,4 @@ gem 'sorcery'
 # Trying to fix 'undefined method `key?' for nil:NilClass' problem encountered in tutorial
 gem 'acl9'
 gem 'color'
-gem 'polychromasia', '> 0.0.2'
+gem 'polychromasia', '>= 1.0.0'
